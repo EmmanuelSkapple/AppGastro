@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_platillos"
+            android:icon="@drawable/ic_platillos_24dp"
+            android:title="Platillos" />
+        <item
+            android:id="@+id/nav_ventas"
+            android:icon="@drawable/ic_ventas_24dp"
+            android:title="Ventas" />
+        <item
+            android:id="@+id/nav_compras"
+            android:icon="@drawable/ic_compras_24dp"
+            android:title="Compras" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat_24dp"
+            android:title="Chat" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_log_out_24dp"
+            android:title="Log Out" />
+    </group>
+
+
+</menu>
