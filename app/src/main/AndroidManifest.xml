@@ -10,7 +10,6 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".chat_main" />
+        <activity android:name=".perfil_main" />
+        <activity android:name=".compras_main" />
+        <activity android:name=".ventas_main" />
+        <activity android:name=".platillos_main"></activity>
     </application>
 
 </manifest>

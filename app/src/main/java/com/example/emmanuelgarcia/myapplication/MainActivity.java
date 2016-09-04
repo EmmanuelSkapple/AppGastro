@@ -1,5 +1,6 @@
 package com.example.emmanuelgarcia.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -60,17 +61,46 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
+    public void OnClick_Perfil(MenuItem item){
+        perfil_main ActivityPerfil = new perfil_main();
+        Intent intent = new Intent(getApplicationContext(), perfil_main.class);
+        startActivity(intent);
+
+    }
+    public void OnClick_Ventas(MenuItem item){
+        ventas_main ActivityVentas= new ventas_main();
+        Intent intent = new Intent(getApplicationContext(), ventas_main.class);
+        startActivity(intent);
+
+    }
+    public void OnClick_Compras(MenuItem item){
+        compras_main ActivityCompras = new compras_main();
+        Intent intent = new Intent(getApplicationContext(), compras_main.class);
+        startActivity(intent);
+    }
+    public  void OnClick_Platillos(MenuItem item){
+        platillos_main ActivityPlatillos = new platillos_main();
+        Intent intent = new Intent(getApplicationContext(), platillos_main.class);
+        startActivity(intent);
+    }
+    public void OnClick_Chat(MenuItem item){
+        chat_main ActivityChat = new chat_main();
+        Intent intent = new Intent(getApplicationContext(), chat_main.class);
+        startActivity(intent);
+    }
+
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
